@@ -27,7 +27,7 @@ export const experienceItems: ExperienceItemProps[] = [
   {
     date: "Septiembre 2024 - Actualidad",
     title: "Desarrollador FrontEnd - Agora Partnerships",
-    description: `Desarrollo de componentes de interfaz de usuario utilizando React, TypeScript, Zustand, y Ant Design, incluyendo formularios dinámicos, tablas interactivas, y modales personalizados. Integración de React Router DOM para el manejo de tabs dinámicos en la interfaz, sincronizando la URL con el estado actual de las tabs y filtros aplicados. Mejora del rendimiento de la aplicación, optimizando el Speed Index y manejando la asignación de clases condicionales en Tailwind CSS para mejorar la experiencia de usuario. Colaboración estrecha con el equipo de diseño para asegurar la implementación precisa de las interfaces de usuario, utilizando Figma para mantener la consistencia visual y la interacción en la aplicación. Gestión de flujos de estado complejos con Zustand, incluyendo la actualización de datos en modales y tablas, soporte para múltiples escenarios de creación y actualización de registros, y lógica de filtrado y paginación.`,
+    description: `Desarrollé componentes en React + TypeScript (formularios dinámicos, tablas interactivas, modales)\nIntegré React Router DOM con tabs dinámicos y estado persistente en URL\nMejoré el rendimiento de la app optimizando el Speed Index\nColaboré con diseño usando Figma para mantener consistencia visual\nGestioné flujos de estado complejos con Zustand`,
     link: "https://agorapartnerships.org",
     tecnology:
       "React, TypeScript, React Router DOM, Zustand, Ant Design, Tailwind CSS",
@@ -37,7 +37,7 @@ export const experienceItems: ExperienceItemProps[] = [
   {
     date: "Enero 2023 - Septiembre 2024",
     title: "Desarrollador Full-Stack - FooTalenGroup ",
-    description: `Como desarrollador full-stack, me enfoco en optimizar la experiencia del usuario mediante la colaboración estrecha con equipos de front-end, utilizando herramientas como React, Next.js y Tailwind CSS. Desarrollo APIs escalables con Node.js y Express, integrando bases de datos como PostgreSQL y MongoDB, y mejoro las aplicaciones a través de la integración de servicios externos.Mi capacidad para liderar proyectos, gestionar el tiempo eficazmente y mantener una comunicación clara me permite ofrecer soluciones eficientes y de alta calidad.`,
+    description: `Construí interfaces complejas con React, Next.js y Tailwind CSS\nDesarrollé APIs escalables con Node.js, Express, PostgreSQL y MongoDB\nIntegré servicios externos y lideré proyectos full-stack de punta a punta\nTrabajé en entornos ágiles con comunicación clara entre equipos`,
     link: "https://www.linkedin.com/company/footalentgroup/",
     tecnology:
       "Astro, React, TypeScript, Next.js, Node.js, Clerk, Liveblocks, Convex, Tailwind CSS, Jest, Swagger, Sequelize.",
@@ -47,8 +47,7 @@ export const experienceItems: ExperienceItemProps[] = [
   {
     date: "Noviembre 2016 - Octubre 2024",
     title: "Policía - Gobierno de la Ciudad de Buenos Aires",
-    description:
-      "En estos 8 años he desarrollado sólidas habilidades en comunicación y liderazgo, coordinando equipos y asegurando la claridad en la ejecución de tareas. Me destaco por ser un trabajador puntual y eficiente, tanto en equipos como de manera independiente",
+    description: `Coordiné equipos desarrollando habilidades de liderazgo bajo presión\nPerfeccioné comunicación efectiva y toma de decisiones en situaciones críticas\nMantuve altos estándares de trabajo en equipo y responsabilidad durante 8 años`,
     softSkills:
       "Comunicación efectiva, Trabajo en equipo, Liderazgo, Resolución de problemas, Adaptabilidad, Pensamiento crítico, Gestión del tiempo, Empatía, Creatividad, Capacidad de negociación, Toma de decisiones, Orientación a resultados, Capacidad de motivar a otros,",
   },

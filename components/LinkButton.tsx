@@ -1,18 +1,28 @@
 import Link from 'next/link'
 import React from 'react'
+
 interface LinkButtonProps {
   children: React.ReactNode
   classname?: string
   href: string
   download?: boolean
+  variant?: 'default' | 'primary'
 }
-export const LinkButton = ({ children, classname, href, download }: LinkButtonProps) => {
+
+export const LinkButton = ({ children, classname, href, download, variant = 'default' }: LinkButtonProps) => {
+  const baseClass =
+    'flex items-center gap-x-2 font-semibold rounded-xl px-5 py-2.5 me-2 mb-2 text-sm transition-all border border-white/10 backdrop-blur-sm'
+  const variantClass =
+    variant === 'primary'
+      ? 'bg-green-500 text-black hover:bg-green-400'
+      : 'bg-white/5 text-gray-900 dark:text-white hover:bg-white/10'
+
   return (
     <Link
       download={download}
       target='_blank'
       href={href}
-      className='flex items-center gap-x-2 font-semibold text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100  rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700 transition'>
+      className={`${baseClass} ${variantClass} ${classname ?? ''}`}>
       {children}
     </Link>
   )

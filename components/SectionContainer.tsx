@@ -7,7 +7,7 @@ interface SectionContainerProps {
 export const SectionContainer = ({ children, id, className }: SectionContainerProps) => {
   return (
     <section
-      className={`${className} scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl`}
+      className={`${className} scroll-m-20 w-full mx-auto container lg:max-w-6xl md:max-w-4xl`}
       id={id}>
       {children}
     </section>

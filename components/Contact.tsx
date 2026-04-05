@@ -40,10 +40,13 @@ export const Contact = () => {
   }
   return (
     <div>
-      <h2 className='flex items-center mb-14 text-3xl md:text-4xl font-bold gap-x-3 text-black/80 dark:text-white '>
-        <ContactIcon />
-        Contacto
-      </h2>
+      <div className='mb-10'>
+        <h2 className='flex items-center mb-2 text-3xl md:text-4xl font-bold gap-x-3 text-black/80 dark:text-white'>
+          <ContactIcon />
+          ¿Tenés una idea o proyecto?
+        </h2>
+        <p className='text-lg text-gray-600 dark:text-gray-400'>Hablemos y lo construimos.</p>
+      </div>
       <form className='mx-auto' onSubmit={handleSubmit(handleSendEmail)} ref={form}>
         <div className='mb-5'>
           <label
@@ -55,7 +58,7 @@ export const Contact = () => {
             type='text'
             id='name'
             placeholder='Como te llamas'
-            className='bg-gray-50 border border-gray-300 text-gray-900 text-sm md:text-lg rounded-lg  block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-white dark:text-white '
+            className='bg-white/5 border border-white/10 text-gray-900 text-sm md:text-lg rounded-xl block w-full p-2.5 dark:text-white dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400 transition'
             {...register('user_name', {
               required: 'El Nombre es obligatorio'
             })}
@@ -78,7 +81,7 @@ export const Contact = () => {
                 message: 'E-mail no válido'
               }
             })}
-            className='bg-gray-50 border border-gray-300 text-gray-900 text-sm md:text-lg rounded-lg  block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-white dark:text-white '
+            className='bg-white/5 border border-white/10 text-gray-900 text-sm md:text-lg rounded-xl block w-full p-2.5 dark:text-white dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400 transition'
             placeholder='nombre@gmail.com'
           />
           {errors.user_email && <ErrorMessage>{errors.user_email.message}</ErrorMessage>}
@@ -98,16 +101,14 @@ export const Contact = () => {
                 message: 'El mensaje debe tener al menos 10 caracteres'
               }
             })}
-            className='block p-2.5 w-full text-sm md:text-lg text-gray-900 bg-gray-50 rounded-lg border border-gray-300  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-white dark:text-white   resize-none'
+            className='block p-2.5 w-full text-sm md:text-lg text-gray-900 bg-white/5 rounded-xl border border-white/10 dark:text-white dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400 transition resize-none'
             placeholder='Deja un mensaje...'></textarea>
           {errors.message && <ErrorMessage>{errors.message.message}</ErrorMessage>}
         </div>
         <div className='flex justify-center '>
           <button
             type='submit'
-            className='text-black dark:text-white mt-5 items-center px-8 py-2 text-xl font-medium  bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-emerald-700 
- dark:bg-gray-800  dark:border-gray-600 dark:hover:text-white
-      dark:hover:bg-gray-700  transition w-full sm:w-auto  text-center  '>
+            className='mt-5 px-8 py-2.5 text-base font-semibold bg-green-500 text-black rounded-xl hover:bg-green-400 transition-all w-full sm:w-auto text-center'>
             Enviar
           </button>
         </div>

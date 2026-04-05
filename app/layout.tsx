@@ -43,7 +43,7 @@ export default function RootLayout({
   return (
     <html lang='en' suppressHydrationWarning>
       <body
-        className={`bg-gradient-to-t from-teal-100 to-slate-300 dark:bg-gradient-to-t dark:from-teal-900 dark:to-slate-800 text-black dark:text-white ${onest.className}`}>
+        className={`bg-gradient-to-t from-teal-100 to-slate-300 dark:bg-gradient-to-br dark:from-[#0f172a] dark:via-[#0b1f1a] dark:to-[#020617] text-black dark:text-white ${onest.className}`}>
         <ProviderTheme>
           <ToastProvider>{children}</ToastProvider>
         </ProviderTheme>

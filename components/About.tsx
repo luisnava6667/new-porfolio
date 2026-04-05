@@ -19,34 +19,10 @@ export const About = () => {
             className='w-72 h-72 rotate-6 transition-all duration-300 rounded-lg shadow-xl justify-items-center'
           />
         </div>
-        <div className='[&>p]:mb-4 [&>p>strong]:text-green-700/75 dark:[&>p>strong]:text-emerald-400 font-bold text-sm text-pretty md:w-1/2'>
-          <p>
-            ¡Hola! Soy Luis Navarro, un desarrollador Full Stack de Buenos Aires, Argentina. Desde hace tres
-            años, he estado sumergido en el diseño y desarrollo web, siempre buscando nuevas maneras de
-            mejorar la experiencia de los usuarios a través de la tecnología.{' '}
-            <strong className='font-mono'>
-              Mi enfoque se centra en crear soluciones innovadoras y útiles que hagan la vida más fácil para
-              las personas.
-            </strong>
-          </p>
-          <p>
-            Durante mi trayectoria, he tenido la oportunidad de trabajar en diversos proyectos que me han
-            permitido no solo aplicar mis conocimientos,{' '}
-            <strong className='font-mono'>sino también aprender y adaptarme a nuevas tecnologías. </strong>
-            Disfruto del proceso de colaborar en equipo, donde la combinación de ideas y habilidades lleva a
-            la creación de productos de alta calidad.
-          </p>
-          <p>
-            Además de mi trabajo, me interesa estar conectado con la comunidad tecnológica.{' '}
-            <strong className='font-mono'>
-              Me mantengo actualizado sobre las últimas tendencias y{' '}
-              <em className='italic'>
-                participo en eventos locales donde comparto mis experiencias y aprendo de otros profesionales.
-              </em>{' '}
-            </strong>
-            Para mí, el desarrollo web no es solo un trabajo, sino una oportunidad constante para innovar y
-            crecer.
-          </p>
+        <div className='[&>p]:mb-4 font-medium text-base text-pretty md:w-1/2'>
+          <p>Soy desarrollador enfocado en construir productos reales, no solo código.</p>
+          <p>Trabajo en interfaces complejas, performance y experiencia de usuario en SaaS.</p>
+          <p>Me interesa crear soluciones que impacten en el negocio y escalen en el tiempo.</p>
         </div>
       </div>
     </article>

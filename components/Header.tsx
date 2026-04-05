@@ -17,7 +17,7 @@ export const Header = () => {
           <Link
             href={item.url}
             key={index}
-            className='relative transition hover:text-emerald-700 dark:hover:text-emerald-300 [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]'
+            className='relative transition-colors hover:text-green-400 [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]'
             aria-label={item.label}
             onClick={(e) => handleLinkClick(e, item.url.substring(1))}>
             {item.title}

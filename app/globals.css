@@ -1,15 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 .nav {
-  animation: nav-shadown 1s linear both;
+  animation: nav-shadow 1s linear both;
   animation-timeline: scroll();
   animation-range: 0 100px;
-  text-color: #ffffff;
 }
-@keyframes nav-shadown {
+
+@keyframes nav-shadow {
   to {
-    @apply shadow-lg text-emerald-400 backdrop-blur-3xl  bg-white/50 ring-white/10 rounded-2xl;
+    @apply shadow-[0_10px_40px_rgba(0,0,0,0.3)] text-green-400 backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl;
   }
 }
 
@@ -21,7 +22,32 @@ html {
   font-family: 'Onest Variable', system-ui, sans-serif;
   scroll-behavior: smooth;
 }
+
 body {
   min-height: 100vh;
+}
+
+@keyframes scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll {
+  animation: scroll 80s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  will-change: transform;
+}
+
+.animate-scroll-slow   { animation-duration: 120s; }
+.animate-scroll-fast   { animation-duration: 40s; }
+.animate-scroll-paused { animation-play-state: paused; }
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
 }
 
