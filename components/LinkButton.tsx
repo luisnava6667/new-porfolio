@@ -7,9 +7,10 @@ interface LinkButtonProps {
   href: string
   download?: boolean
   variant?: 'default' | 'primary'
+  ariaLabel?: string
 }
 
-export const LinkButton = ({ children, classname, href, download, variant = 'default' }: LinkButtonProps) => {
+export const LinkButton = ({ children, classname, href, download, variant = 'default', ariaLabel }: LinkButtonProps) => {
   const baseClass =
     'flex items-center gap-x-2 font-semibold rounded-xl px-5 py-2.5 me-2 mb-2 text-sm transition-all border border-white/10 backdrop-blur-sm'
   const variantClass =
@@ -22,6 +23,7 @@ export const LinkButton = ({ children, classname, href, download, variant = 'def
       download={download}
       target='_blank'
       href={href}
+      aria-label={ariaLabel}
       className={`${baseClass} ${variantClass} ${classname ?? ''}`}>
       {children}
     </Link>

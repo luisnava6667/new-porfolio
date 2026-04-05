@@ -16,8 +16,8 @@ export const Hero = () => {
             Construyo productos SaaS rápidos, escalables y pensados para crecer.
           </h1>
           <Image
-            src="/hero.webp"
-            alt="Luis Navarro"
+            src="/hero.jpeg"
+            alt="Luis Navarro Frontend Developer React Next.js"
             width={175}
             height={175}
             className="rounded-full shrink-0 hidden md:block"
@@ -32,21 +32,22 @@ export const Hero = () => {
             en aplicaciones reales.
           </p>
           <p className="text-sm text-gray-500 dark:text-gray-400">
-            +3 años construyendo productos en producción · UX + performance + escalabilidad
+            +3 años construyendo productos en producción · UX + performance +
+            escalabilidad
           </p>
           <div className="flex flex-wrap gap-2 mt-2">
             <LinkButton
               href="https://www.linkedin.com/in/luis-navarro-282858243"
               variant="primary"
-            >
+              ariaLabel="Perfil de LinkedIn de Luis Navarro">
               <LinkedinIcon />
               LinkedIn
             </LinkButton>
-            <LinkButton href="https://github.com/luisr-nava">
+            <LinkButton href="https://github.com/luisr-nava" ariaLabel="Perfil de GitHub de Luis Navarro">
               <GitHubIcon />
               GitHub
             </LinkButton>
-            <LinkButton href="/LuisNavarro_FrontendDev.pdf" download={true}>
+            <LinkButton href="/LuisNavarro_FrontendDev.pdf" download={true} ariaLabel="Descargar CV de Luis Navarro">
               <DocumentIcon />
               Mi CV
             </LinkButton>
@@ -56,3 +57,4 @@ export const Hero = () => {
     </div>
   );
 };
+

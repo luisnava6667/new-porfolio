@@ -24,9 +24,9 @@ export const Projects = () => {
       {/* Carousel wrapper */}
       <div className="relative overflow-hidden">
         {/* Left fade edge */}
-        <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-24 bg-gradient-to-r from-white dark:from-[#0f172a] to-transparent blur-none" />
+        <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-24 bg-gradient-to-r from-[#f8fafc]/80 via-[#f8fafc]/40 to-transparent dark:from-[#0f172a]/80 dark:via-[#0f172a]/40" />
         {/* Right fade edge */}
-        <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-24 bg-gradient-to-l from-white dark:from-[#0f172a] to-transparent blur-none" />
+        <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-24 bg-gradient-to-l from-[#f8fafc]/80 via-[#f8fafc]/40 to-transparent dark:from-[#0f172a]/80 dark:via-[#0f172a]/40" />
 
         {/* Scrolling track */}
         <div
@@ -42,7 +42,7 @@ export const Projects = () => {
           {extendedProjects.map((project, index) => (
             <article
               key={index}
-              className="group flex flex-col w-[320px] md:w-[460px] flex-shrink-0 rounded-2xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-xl shadow-[0_20px_60px_rgba(0,0,0,0.4)] hover:border-green-400/40 hover:shadow-[0_30px_80px_rgba(0,255,150,0.15)] hover:scale-[1.04] hover:-translate-y-1 hover:z-20 transition-all duration-500 ease-out cursor-pointer"
+              className="group flex flex-col w-[320px] md:w-[460px] flex-shrink-0 rounded-2xl overflow-hidden border border-black/15 bg-white/80 backdrop-blur-xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] dark:border-white/10 dark:bg-white/5 dark:shadow-[0_20px_60px_rgba(0,0,0,0.4)] hover:border-green-500/30 dark:hover:border-green-400/40 hover:shadow-[0_25px_60px_rgba(0,0,0,0.12)] dark:hover:shadow-[0_30px_80px_rgba(0,255,150,0.15)] hover:scale-[1.04] hover:-translate-y-1 hover:z-20 transition-all duration-500 ease-out cursor-pointer"
             >
               {/* Image + overlay */}
               <div className="relative overflow-hidden h-56 md:h-64 flex-shrink-0">
@@ -67,8 +67,8 @@ export const Projects = () => {
               </div>
 
               {/* Card body */}
-              <div className="p-5 flex flex-col flex-1 gap-3">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+              <div className="p-5 flex flex-col flex-1 gap-4">
+                <h3 className="text-xl font-bold text-gray-800 dark:text-white">
                   {project.title}
                 </h3>
 
@@ -84,7 +84,7 @@ export const Projects = () => {
                   ))}
                 </ul>
 
-                <p className="text-sm text-gray-600 dark:text-white/70 line-clamp-3 flex-1">
+                <p className="text-sm text-gray-500 dark:text-white/70 line-clamp-3 flex-1">
                   {project.description}
                 </p>
 

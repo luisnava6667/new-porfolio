@@ -28,17 +28,17 @@ body {
 }
 
 @keyframes scroll {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0%   { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
 }
 
 .animate-scroll {
-  animation: scroll 80s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  animation: scroll 120s linear infinite;
   will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
-.animate-scroll-slow   { animation-duration: 120s; }
-.animate-scroll-fast   { animation-duration: 40s; }
 .animate-scroll-paused { animation-play-state: paused; }
 
 @layer utilities {
